@@ -12,7 +12,8 @@ int num=0;
 		// TODO Auto-generated method stub
 		System.out.println("Hello from thread number "+num);
 		if(num<=50) {
-			Thread t = new Thread(new ThreadedGreeter(num+1));
+			num=num+1;
+			Thread t = new Thread(new ThreadedGreeter(num));
 
 		}
 	}
